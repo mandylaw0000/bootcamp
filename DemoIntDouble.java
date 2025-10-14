@@ -1,4 +1,4 @@
-public class DemoInt {
+public class DemoIntDouble {
   public static void main (String[] args) {
     //! 變量
     //! Variable and Date Type
@@ -77,7 +77,7 @@ public class DemoInt {
     double averageScore3 = (englishScore1 + mathScore1 + historyScore1) /3;
     System.out.println(averageScore3);//85.333333333
 
-    int appleCount = 15;
+    int appleCount = 9;
     double applePrice = 5.5;
     int orangeCount = 4;
     double orangePrice = 6.5;
@@ -85,8 +85,9 @@ public class DemoInt {
     double discount = 0.95;
 
     //finalAmount
+    // (int * double + int * double) * double
     double finalAmount = (appleCount * applePrice + orangeCount * orangePrice) * discount;
-    System.out.println(finalAmount);
+    System.out.println(finalAmount); // 7.725
 
 
 
