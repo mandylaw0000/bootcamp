@@ -14,11 +14,11 @@ public class DemoOperator {
 
 
     // +=, -=, *=, /=
-    int y =8;
+    int y = 8;
     y += 2;
     System.out.println(y); // 10
-    y = y + 2; 
-    System.out.println(y); //12
+    y = y + 2;
+    System.out.println(y); // 12
 
     int a = 3;
     a *= 5;
@@ -35,38 +35,38 @@ public class DemoOperator {
 
     // % -> remainder
     int r = 10 % 3;
-    System.err.println(r); //1 
+    System.err.println(r); // 1
 
     // ++, --
     int k = 6;
-    //k = ++k + 3; // k + 1 before + 3
+    // k = ++k + 3; // k + 1 before + 3
     int a1 = ++k + 3;
     System.out.println(a1); // 10
     System.out.println(k); // 7
 
     int j = 6;
-    int a2 = j++ +3;
-    System.out.println(a2); //9
-    System.out.println(j); //7
+    int a2 = j++ + 3;
+    System.out.println(a2); // 9
+    System.out.println(j); // 7
 
-    //k = k++ +3; // k + 3 --> assign --> k + 1
+    // k = k++ +3; // k + 3 --> assign --> k + 1
 
 
     // post
     int o = 9;
     o++;
     int result = o + 2;
-    
+
 
     System.out.println(result);
 
     int h = 3;
     int m = (h++ + 3) * h++;
-// what is m?
+    // what is m?
     System.out.println(m);
     // h + 3 = 6
     // h ++ = 4
     // 6 * 4
     // h++ = h because 5
-}
+  }
 }

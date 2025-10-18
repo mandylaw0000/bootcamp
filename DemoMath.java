@@ -1,7 +1,9 @@
+import java.util.Random;
+
 public class DemoMath {
   public static void main(String[] args) {
     double r = Math.pow(2, 4.0); // 16.0
-    System.out.println(r); 
+    System.out.println(r);
 
     System.out.println(Math.ceil(3.1));// 4.0
     System.out.println(Math.floor(3.9)); // 3.0
@@ -11,7 +13,7 @@ public class DemoMath {
 
     // In java, we don't have byte value and short value
     // assign int value into short varible
-    short s1 = 1; //safe 尾寫死
+    short s1 = 1; // safe 寫死
 
     int x = 1;
     // short s2 = x; // unsafe, 未寫死
@@ -36,11 +38,18 @@ public class DemoMath {
     System.out.println(Math.round(0.134));// 0
     System.out.println(Math.round(0.534));// 1
 
-    double d10 = 0.1235; //0.124
-    System.out.println(Math.round(d10*1000)/1000.0); //0.124
+    double d10 = 0.1235; // 0.124
+    System.out.println(Math.round(d10 * 1000) / 1000.0); // 0.124
 
     System.out.println(Math.random());// random number(0-1)
-    
+
+    // Math.random
+    // New Randpm
+    int r1 = new Random().nextInt(1, 49); //
+    System.out.println(r1);
+
+    //marksix (1-49)
+
 
 
 
