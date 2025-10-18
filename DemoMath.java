@@ -45,11 +45,20 @@ public class DemoMath {
 
     // Math.random
     // New Randpm
-    int r1 = new Random().nextInt(1, 49); //
+    int r1 = new Random().nextInt(2); //
     System.out.println(r1);
 
-    //marksix (1-49)
+    // marksix (1-49)
+    int r2 = new Random().nextInt(1, 49); //
+    System.out.println(r2);
 
+    // 'a' - 'z' (ascii code)
+    // 97 - 122
+    // char ''
+    int r3 = new Random().nextInt(97, 122); //
+    char character = (char) r3;
+    System.out.println(character);
+    
 
 
 
