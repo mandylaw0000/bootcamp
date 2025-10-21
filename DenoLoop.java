@@ -1,3 +1,6 @@
+import java.util.Scanner;
+import javax.swing.plaf.synth.SynthSplitPaneUI;
+
 public class DenoLoop {
   public static void main(String[] args) {
     // flow -> if-else
@@ -10,7 +13,7 @@ public class DenoLoop {
 
     // for-loop
     // (initialization; continue, criteria; modifier)
-    for (int i = 0; i < 3; i++) { // 5次
+    for (int i = 0; i < 3; i++) { // 3次
       System.out.println("Hello");
 
     }
@@ -35,7 +38,7 @@ public class DenoLoop {
     System.out.println("total = " + total);
 
 
-    // for loop + if (1-10, print odd number only)
+   // for loop + if (1-10, print odd number only)
     for (int i = 0; i < 10; i++) {
       if (i % 2 == 1) {
         System.out.println(i);
@@ -90,8 +93,14 @@ public class DenoLoop {
     }
     System.out.println(evenSum * oddSum);
 
-    // String
-    for 
+    // Scanner collect input
+    Scanner s = new Scanner(System.in);
+    System.out.println("Please input an integer");
+    int input = s.nextInt();
+    int result = input * 3;
+    System.out.println("result = " + result);
+
+
 
 
   }
