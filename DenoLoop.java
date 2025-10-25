@@ -38,7 +38,7 @@ public class DenoLoop {
     System.out.println("total = " + total);
 
 
-   // for loop + if (1-10, print odd number only)
+    // for loop + if (1-10, print odd number only)
     for (int i = 0; i < 10; i++) {
       if (i % 2 == 1) {
         System.out.println(i);
@@ -93,13 +93,30 @@ public class DenoLoop {
     }
     System.out.println(evenSum * oddSum);
 
-    // Scanner collect input
-    Scanner s = new Scanner(System.in);
-    System.out.println("Please input an integer");
-    int input = s.nextInt();
-    int result = input * 3;
-    System.out.println("result = " + result);
+    // loop + if + break/continue
+    // 1. break
+    // searching
+    String[] names =
+        new String[] {"John", "Peter", "Sally", "Vincent", "Steven"}; // fixed-length = 4
+    // Find the first names that length > 5
+    String targetName = null;
+    for (int i = 0; i < names.length; i++) {
+      System.out.println("i = " + i);
+      if (names[i].length() > 5) {
+        targetName = names[i];
+        break; // break the loop
 
+      }
+    }
+    System.out.println("targetName = " + targetName);
+
+
+    // Scanner collect input
+    // Scanner s = new Scanner(System.in);
+    // System.out.println("Please input an integer");
+    // int input = s.nextInt();
+    // int result = input * 3;
+    // System.out.println("result = " + result);
 
 
 

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class DemoArray {
   public static void main(String[] args) {
     // The way to store value: Primitives, Wrapper Class, String total 17 type
@@ -80,8 +82,9 @@ public class DemoArray {
       }
       if (arr3[i] < min) {
         min = arr3[i];
-      }sum += arr3[i];
       }
+      sum += arr3[i];
+    }
 
     System.out.println("max = " + max); // 100
     System.out.println("min = " + min); // -20
@@ -91,7 +94,61 @@ public class DemoArray {
 
     // find the min
 
+    // String[]
+    String[] names = new String[3];
+    names[0] = "John";
+    names[1] = "Jennie";
+    names[2] = "Steven";
 
-  }
-  }
+    for (int i = 0; i < names.length; i++) {
+      System.out.println("print out name list " + names[i]);
+    }
 
+    // loop: Find name statWith J, print their name
+
+    for (int i = 0; i < names.length; i++) {
+      if (names[i].contains("nn")) {
+        System.out.println("name with nn " + names[i]);
+      }
+    }
+
+    for (int i = 0; i < names.length; i++) {
+      if (names[i].startsWith("j")) {
+        System.out.println("starteith j " + names[i]);
+      }
+    }
+
+    // loop find the index of 'e' for each name, put them in the arry
+    int eCount = 0;
+    for (int i = 0; i < names.length; i++) { // loop every string (i)
+      for (int j = 0; j < names[i].length(); j++) { // loop every character in a String (i)
+        if (names[i].charAt(j) == 'e') {
+          eCount++; // counting
+        }
+      }
+    }
+    int[] arr10 = new int[eCount];
+    int idx = 0;
+    for (int i = 0; i < names.length; i++) {
+      for (int j = 0; j < names[i].length(); j++) {
+        if (names[i].charAt(j) == 'e') {
+          arr10[idx] = j;
+          idx++; // searching + counting
+        }
+      }
+    }
+    // ! Print an Array -> Arrays.toString()
+    System.out.println(Arrays.toString(arr10)); // [1, 5, 2, 4]
+
+    // search = count
+    String n1 = "Mandy";
+    // count the number of 'd'
+    int dCount = 0;
+    for (int i = 0; i < n1.length(); i++) {
+      if (n1.charAt(i) == 'd') {
+        dCount++;
+      }
+    }
+    System.out.println(dCount);
+  }
+}
